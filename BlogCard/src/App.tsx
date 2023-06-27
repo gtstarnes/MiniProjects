@@ -1,13 +1,13 @@
 import image from './Images/1.jpg'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import image2 from './Images/2.jpg'
+
 
 
 function App() {
 
   return (
     <div className="flex h-screen">
-      <section className="m-auto justify-center w-[300px] bg-white rounded-md flex flex-col gap-2 shadow-lg overflow-hidden hover:scale-[130%] hover:cursor-pointer active:scale-100">
+      <section className="m-auto justify-center w-[300px] bg-white rounded-md flex flex-col gap-2 shadow-lg overflow-hidden hover:scale-[120%] hover:cursor-pointer active:scale-100">
         <div>
           <img src={image} />
         </div>
@@ -16,8 +16,8 @@ function App() {
           <h3 className="font-bold">How I Built Web Development Challenges Website</h3>
           <p>If you're looking for inspiration to build your own side project...</p>
         </div>
-        <figure className="p-6">
-          <img />
+        <figure className="p-6 flex gap-2">
+          <img src={image2} className="rounded-full object-cover max-h-12 w-12" />
           <figcaption>
             <h4 className="font-bold">Corey Lubin</h4>
             <p className="text-slate-500">4 h ago</p>
