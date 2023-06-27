@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="flex h-screen">
-      <section className="m-auto justify-center w-[300px] bg-white rounded-md flex flex-col gap-4 shadow-lg overflow-hidden">
+      <section className="m-auto justify-center w-[300px] bg-white rounded-md flex flex-col gap-2 shadow-lg overflow-hidden hover:scale-[130%] hover:cursor-pointer active:scale-100">
         <div>
           <img src={image} />
         </div>
@@ -16,7 +16,7 @@ function App() {
           <h3 className="font-bold">How I Built Web Development Challenges Website</h3>
           <p>If you're looking for inspiration to build your own side project...</p>
         </div>
-        <figure>
+        <figure className="p-6">
           <img />
           <figcaption>
             <h4 className="font-bold">Corey Lubin</h4>
