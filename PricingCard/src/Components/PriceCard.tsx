@@ -20,7 +20,7 @@ const plans = [
     },
     {
       id: 3,
-      plan: "Starter",
+      plan: "Enterprise",
       price: "Let's Talk",
       features: [
         "Unlimited MAUs", "All Pro features", "Dedicated environment", "Enterprise account administration", "Premium support and services"
@@ -30,21 +30,21 @@ const plans = [
 
 const PriceCardItem = (props: any) => {
   return (
-    <article>
-        <h4>{props.card.plan}</h4>
-        <h1>{props.card.price}</h1>
-        <ul>{props.card.features.map((feature: string) => {
-            return <li>{feature}</li>
+    <article className="bg-[#202020] w-[100%] flex flex-col items-center gap-6 px-8 pt-8 rounded-md h-[600px] max-w-[500px]">
+        <h4 className="text-xl">{props.card.plan}</h4>
+        <h1 className="text-5xl font-bold">{props.card.price}</h1>
+        <ul className="list-disc marker:text-red-500 ">{props.card.features.map((feature: string) => {
+            return <li className="mt-4">{feature}</li>
         })}
         </ul>
-        <button>Choose Plan</button>
+        <button className={props.card.plan === "Pro" ? "bg-red-500 w-60 h-16 rounded-sm mt-[120px]" : "w-60 h-16 rounded-sm mt-20 border border-red-500"}>Choose Plan</button>
     </article>
   )
 }
 
 const PriceCard = () => {
     return (
-        <section>
+        <section className="w-[90%] mx-4 flex flex-wrap gap-10">
         {plans.map((card: any) => {
             return <PriceCardItem card={card} key={card.id} />;
           })}
