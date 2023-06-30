@@ -23,7 +23,7 @@ const plans = [
       plan: "Enterprise",
       price: "Let's Talk",
       features: [
-        "Unlimited MAUs", "All Pro features", "Dedicated environment", "Enterprise account administration", "Premium support and services"
+        "Unlimited MAUs", "All starter features", "All Pro features", "Dedicated environment", "Enterprise account administration", "Premium support and services"
       ]
     }
   ]
@@ -37,14 +37,14 @@ const PriceCardItem = (props: any) => {
             return <li className="mt-4">{feature}</li>
         })}
         </ul>
-        <button className={props.card.plan === "Pro" ? "bg-red-500 w-60 h-16 rounded-sm mt-[120px]" : "w-60 h-16 rounded-sm mt-20 border border-red-500"}>Choose Plan</button>
+        <button className={props.card.plan === "Pro" ? "bg-red-500 w-60 h-16 rounded-sm mt-[120px] active:bg-white" : "w-60 h-16 rounded-sm mt-20 active:bg-red-500 border border-red-500"}>Choose Plan</button>
     </article>
   )
 }
 
 const PriceCard = () => {
     return (
-        <section className="w-[90%] mx-4 flex flex-wrap gap-10">
+        <section className="w-[90%] mx-4 flex flex-wrap gap-10 justify-center">
         {plans.map((card: any) => {
             return <PriceCardItem card={card} key={card.id} />;
           })}
