@@ -37,7 +37,7 @@ const PriceCardItem = (props: any) => {
             return <li className="mt-4">{feature}</li>
         })}
         </ul>
-        <button className={props.card.plan === "Pro" ? "bg-red-500 w-60 h-16 rounded-sm mt-[120px] active:bg-white" : "w-60 h-16 rounded-sm mt-20 active:bg-red-500 border border-red-500"}>Choose Plan</button>
+        <button className={props.card.plan === "Pro" ? "bg-red-500 w-60 h-16 rounded-sm mt-[120px] active:bg-white active:text-red-500" : "w-60 h-16 rounded-sm mt-20 active:bg-red-500 border border-red-500"}>Choose Plan</button>
     </article>
   )
 }
