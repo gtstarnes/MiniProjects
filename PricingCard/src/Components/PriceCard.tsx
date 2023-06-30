@@ -36,7 +36,7 @@ const PriceCardItem = (props: any) => {
   return (
     <article className="bg-[#202020] w-[100%] flex flex-col items-center gap-6 px-8 pt-8 rounded-md h-[600px] max-w-[500px]">
         <h4 className="text-xl">{props.card.plan}</h4>
-        {!annual ? <h1 className="text-5xl font-bold">{props.card.price}</h1> : <h1 className="text-5xl font-bold">{props.card.annual}</h1>}
+        {!annual ? <h1 className="text-5xl font-bold">{props.card.price}</h1> : <h1 className="text-5xl font-bold">{props.card.annual}{props.card.plan === "Pro" ? <span className="text-xl">/ per Month</span> : ""}</h1>}
         <ul className="list-disc marker:text-red-500 ">{props.card.features.map((feature: string) => {
             return <li className="mt-4">{feature}</li>
         })}
