@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <>
-      <Link to="/"><button type="button">Profile</button></Link>
+      <Link to="/profile"><button type="button">Profile</button></Link>
       <h1>Hello from App</h1>
     </>
   )
