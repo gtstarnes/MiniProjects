@@ -7,11 +7,11 @@ const Plato = () => {
   return (
     <div>
         <nav>
-            <ul>
+          <ul className="flex justify-center gap-10">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/socrates">Socrates</Link></li>
             <li><Link to="/aristotle">Aristotle</Link></li>
-            </ul>
+          </ul>
         </nav>
         <PhilosoCard name={plato.name} date={plato.date} life={plato.life} ideas={plato.ideas} />
     </div>

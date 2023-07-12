@@ -6,9 +6,8 @@ import PhilosoCard from '../Components/PhilosoCard';
 const Socrates = () => {
   return (
     <div>
-        <p>Socrates</p>
         <nav>
-            <ul>
+            <ul className="flex justify-center gap-10">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/plato">Plato</Link></li>
             <li><Link to="/aristotle">Aristotle</Link></li>
