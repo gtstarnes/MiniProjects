@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { socrates } from '../PhilosoInfo';
+import { socrates, plato } from '../PhilosoInfo';
 import PhilosoCard from '../Components/PhilosoCard';
 
 const Socrates = () => {
@@ -13,7 +13,8 @@ const Socrates = () => {
             <li><Link to="/aristotle">Aristotle</Link></li>
             </ul>
         </nav>
-        <PhilosoCard name={socrates.name} date={socrates.date} life={socrates.life} ideas={socrates.ideas} />
+        <PhilosoCard name={socrates.name} date={socrates.date} summary={socrates.summary} life={socrates.life} ideas={socrates.ideas} />
+
     </div>
   )
 }

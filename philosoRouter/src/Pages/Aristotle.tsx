@@ -13,7 +13,7 @@ const Aristotle = () => {
             <li><Link to="/plato">Plato</Link></li>
           </ul>
         </nav>
-        <PhilosoCard name={aristotle.name} date={aristotle.date} life={aristotle.life} ideas={aristotle.ideas} />
+        <PhilosoCard name={aristotle.name} date={aristotle.date} summary={aristotle.summary} life={aristotle.life} ideas={aristotle.ideas} />
     </div>
   )
 }
